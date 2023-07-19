@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="RowListScreen" extends="Group" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+
+    <children>
+        <!-- Design the row list screen  -->
+        <RowList
+            id="List"
+            itemComponentName="ListItem"
+            itemSize="[1200,210]"
+            numRows="3"
+            rowItemSize= "[[220,210]]"
+            itemSpacing = "[ 0, 80 ]"
+            rowItemSpacing= "[ [20, 0] ]"
+            rowLabelOffset= "[ [0, 20] ]"
+            showRowLabel="[[true]]"
+            vertFocusAnimationStyle= "fixedFocus"
+            rowFocusAnimationStyle= "floatingFocus"
+            focusBitmapBlendColor = "#FFE300" />
+    </children>
+    <interface>
+        <field id="RowItemSelected" type="intarray" alias="List.rowItemSelected" />
+        <field id="NumRows" type="intarray" alias="List.numRows" />
+    </interface>
+</component>
