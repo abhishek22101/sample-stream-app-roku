@@ -1,0 +1,9 @@
+<component name="HomeScene" extends="Scene"  xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+    <script type="text/brightscript" uri="pkg:/components/screens/HomeScene/HomeScene.brs" />    
+    <children>
+        <Router
+			id="Router"
+	     	visible="true"
+	     	translation="[0,0]"/>
+    </children> 
+</component>

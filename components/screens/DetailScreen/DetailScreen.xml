@@ -1,0 +1,56 @@
+<component name="DetailScreen" extends="BaseGroup" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+    <interface>
+    	<function name= "onAPISuccess"/>
+		<function name= "onErrorFound"/>
+		<field id="playVideo" type="integer" alwaysnotify="true" alias="PlayButton.buttonSelected" onChange="playVideoFunction" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/screens/DetailScreen/DetailScreen.brs" />
+
+	<children>
+		<Group
+			id= "Details" >
+			<Poster
+				id="bgImage"
+				width = "1280"
+				height = "720"
+				opacity="0.1"
+				loadDisplayMode = "scaleToFill" />
+			<Poster
+				id="posterImage"
+				width = "280"
+				height = "420"
+				loadDisplayMode = "scaleToFill"
+				translation="[50,50]" />
+			<Label
+				id="Title"
+				height="50"
+				width="740"
+				horizAlign="center"
+				translation="[400,50]"/>
+			<Label
+				id="Description"
+				width="740"
+				horizAlign="center"
+				maxLines="20"
+				wrap="true"
+				lineSpacing="0.4"
+				translation="[400,130]"/>
+			<Button
+				id= "PlayButton"
+				text= "WATCH TRAILER"
+				focusedIconUri=""
+				translation="[50,500]"
+				maxWidth="380"
+			 />
+			 <BusySpinner
+				id= "Loader"
+				control= "start"
+				uri= "pkg:/images/loader.png"
+				translation= "[600,320]"/>
+		</Group>
+		<Video
+			id="VideoPlayer"
+			visible="false"
+			translation="[0,0]"/>
+    </children>
+</component>

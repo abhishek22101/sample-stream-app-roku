@@ -1,0 +1,12 @@
+<component name="UriHandler" extends="Task" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+	<interface>
+        <!-- Field to set the API issue a request to the handler -->
+        <field id="request" type="assocarray"/>
+        <field id="response" type="Node"/>
+        <field id="requestnumber" type="integer"/>
+        <function name="addRequest" />
+        <field id="listener" type="Node"/>
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/screens/UriHandler/UriHandler.brs" />
+</component>
