@@ -8,9 +8,7 @@ Sub RunUserInterface()
     m.global.addFields({
     
     ' Add base url of local server 
-    ' serverBaseUrl: "192.168.43.48:8080",
-    serverBaseUrl: "https://gizmo.rakuten.tv/",
-    gilroyRegularFontUri: "pkg:/fonts/Gilroy-Regular.otf",
+
     detailsId: "",
     })
 
