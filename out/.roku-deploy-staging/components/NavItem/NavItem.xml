@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="NavItem" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" onChange="onItemContentChanged" />
+        <field id="focusPercent" type="float" onChange="onFocusPercentChange" />
+    </interface>
+    <script type="text/brightscript" uri="NavItem.brs" />
+    <children>
+        <Poster
+            id="icon"
+            width="60"
+            height="60"
+            loadDisplayMode="scaleToFit" />
+    </children>
+</component> 

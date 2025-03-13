@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="Navbar" extends="Group">
+    <interface>
+        <field id="focusedIndex" type="integer" value="0" />
+    </interface>
+    <script type="text/brightscript" uri="Navbar.brs" />
+    <children>
+        <Rectangle
+            id="background"
+            width="100"
+            height="1080"
+            color="0x000000FF" />
+        <MarkupList
+            id="navList"
+            translation="[20,100]"
+            itemComponentName="NavItem"
+            numRows="6"
+            itemSize="[60,60]"
+            itemSpacing="[0,40]"
+            vertFocusAnimationStyle="floatingFocus"
+            drawFocusFeedback="false"
+            />
+    </children>
+</component> 
